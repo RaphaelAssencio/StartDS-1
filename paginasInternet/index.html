@@ -29,7 +29,7 @@
   </head>
   <body>
     <!--Início da barra de navegação-->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#337744">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #337744">
       <!--navbar-expand-lg: tamanho grande expandido, outros tamanhos são recolhidos; navbar-dark: cor do texto; fixed-top: não rola com o conteúdo do site-->
       <div class="container">
         <a class="navbar-brand" href="#">LOGO</a>
@@ -76,7 +76,8 @@
 
     <!--Início da barra de navegação que tem a pesquisa-->
     <div class="container-navbar-pesquisa">
-      <nav id="barrapesquisa" class="navbar  navbar-light" style="background-color: #337744">
+      <nav id="barraPesquisa" class="navbar navbar-dark" style="background-color: #337744">
+        <!--Ícones provisórios, criar-->
         <a class="nav-item">
           <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/icone.png" alt="">Frutas
         </a>
@@ -156,6 +157,7 @@
             </h4>
             <h5>R$3.99 Kg</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <!--Escolher botões, o primeiro eu copiei de um site, mas ainda não funciona-->
             <input class="btn btn-success button product-quantity-increement" type="button" value="-" onclick="quantity_dec($(this).parent() )">
             <input type="text" name="quantity" value="1" size="1" class="product-quantity" style="height: 28px">
             <input class="btn btn-success button product-quantity-decrement" type="button" value="+" onclick="quantity_inc($(this)parent() )">
@@ -278,19 +280,21 @@
 <footer class="py-5" style="background-color:#337744">
 <div class="container">
   <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-  <p class="m-2 text-white">Formas de Pagamento</p>
+  <h6 class="m-2 text-white">Formas de Pagamento</h6>
+  <h6 class="mr-2 text-right text-white">Redes sociais e app</h6>
+  <!--Redimensionar as imagens-->
   <img class="img-cartao ml-2 mr-1" src="imagens/mastercard.png">
   <img class="img-cartao m-1" src="imagens/visa.png">
   <img class="img-cartao m-1" src="imagens/elo.png">
-  <p class="img-social "</p>
-  <img class="img-cartao mr-1" src="imagens/facebook.png">
-
+  <!--Enviar para a direita esses ícones-->
+  <img class="img-cartao m-1" src="imagens/facebook.png">
+  <img class="img-cartao m-1" src="imagens/instagram.png">
+  <img class="img-cartao m-1" src="imagens/appstore.png">
+  <img class="img-cartao m-1" src="imagens/playstore.jpg">
 
 </div>
 <!-- /.container -->
 </footer>
-
-       
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
