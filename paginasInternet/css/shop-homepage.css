@@ -33,8 +33,7 @@ body {
   float: right;
 }
 .img-cartao{
-  height: 45px;
-  width: 70px;
+  width: 5%;
 }
 .card-title{
   color: red;
@@ -44,4 +43,21 @@ body {
   height: 60px;
   width: 60px;
 }
-
+.navbar-default {
+  background: linear-gradient(to bottom, #337744, #11421a);
+}
+.redesSociais{
+  float: right;
+  width: 4%;
+}
+h2{
+  text-align: center;
+}
+.card-text{
+  font-size: 12px;
+  text-align: center;
+  text;
+}
+.botaoLogin{
+  float: center;
+}
