@@ -50,14 +50,19 @@ body {
   float: right;
   width: 4%;
 }
-h2{
+.card-price{
   text-align: center;
 }
 .card-text{
   font-size: 12px;
   text-align: center;
-  text;
 }
-.botaoLogin{
-  float: center;
+.navbar-brand{
+  width: 7%;
+}
+.nav-icone{
+  width: 5%;
+}
+#icons{
+  float: left;
 }
