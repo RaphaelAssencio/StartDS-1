@@ -31,7 +31,7 @@
     <!--Início da barra de navegação-->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-default">
             <div class="container">
-                <img src="imagens/logosemfundo.png" class="navbar-brand" href="#">
+                <img src="imagens/logosemfundo.png" class="navbar-brand">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -75,80 +75,129 @@
             </div>
         </nav>
         <!--Fim da barra de navegação-->
-        <div class="container">
-            <form>
-                <div class="form-group">
-                    <label for="">Nome completo</label>
-                    <input type="text" class="form-control">
+        <div class="container-form">
+             <form>
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="">Nome completo</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="">Endereço</label>
-                    <input type="text" class="form-control">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 mb-4 float-left">
+                        <div class="form-group">
+                            <label for="">Endereço</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 float-right">
+                        <div class="form-group">
+                            <label for="">Nº</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 float-left">
+                        <div class="form-group">
+                            <label for="">Complemento</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="">nº</label>
-                    <input type="text" class="form-control">
+                <div class="row">
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 float-right">
+                        <div class="form-group">
+                            <label for="">Bairro</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 float-right">
+                        <div class="form-group">
+                            <label for="">Cidade</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 float-right">
+                        <div class="form-group">
+                            <label for="">Estado</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 float-left">
+                        <div class="form-group">
+                            <label for="">CEP</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="">Complemento</label>
-                    <input type="text" class="form-control">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 mb-4 float-left">
+                        <div class="form-group">
+                            <label for="">E-mail</label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4 float-right">
+                        <div class="form-group">
+                            <label for="">Confirme o e-mail</label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="">Bairro</label>
-                    <input type="text" class="form-control">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 mb-4 float-left">
+                        <div class="form-group">
+                            <label for="">Senha</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4 float-right">
+                        <div class="form-group">
+                            <label for="">Confirme a senha</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="">Cidade</label>
-                    <input type="text" class="form-control">
-                </div><div class="form-group">
-                    <label for="">Estado</label>
-                    <input type="text" class="form-control">
+                <div class="row">
+                    <div class="form-group">
+                        <input type="checkbox">Desejo receber ofertas no meu e-mail
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="">CEP</label>
-                    <input type="text" class="form-control">
+                <div class="row">
+                    <button class="btn btn-success" type="submit">Cadastrar</button>
                 </div>
-                <div class="form-group">
-                    <label for="">E-mail</label>
-                    <input type="email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="">Confirme o e-mail</label>
-                    <input type="email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="">Senha</label>
-                    <input type="password" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="">Confirme a senha</label>
-                    <input type="password" class="form-control">
-                </div>
-
-            
-
             </form>
         </div>
         
+        
 <!-- Footer -->
 <footer class="py-5 navbar-default">
-<div class="container">
-  <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-  <h6 class="m-2 text-white">Formas de Pagamento</h6>
-  <h6 class="mr-2 text-right text-white">Redes sociais e app</h6>
-  <!--Redimensionar as imagens-->
-  <img class="img-cartao ml-2 mr-1" src="imagens/mastercard.png">
-  <img class="img-cartao m-1" src="imagens/visa.png">
-  <img class="img-cartao m-1" src="imagens/elo.png">
-  <img class="img-cartao m-1" src="imagens/americanexpress.png">
-  <img class="img-cartao m-1" src="imagens/dinersclub.jpg">
-  <!--Enviar para a direita esses ícones-->
-  <img class="redesSociais mr-2" src="imagens/appstore.png">
-  <img class="redesSociais mr-2" src="imagens/playstore.jpg">
-  <img class="redesSociais mr-2" src="imagens/instagram.png">
-  <img class="redesSociais mr-2" src="imagens/facebook.png">
-</div>
+    <div class="container">
+        <p class="m-0 text-center text-white">Veg & Tal</p>
+        <div class="row">
+            <h6 id="textFooter" class="m-2 text-white">Formas de Pagamento</h6>
+            <h6 id="textFooter" class="mr-2 text-white">Redes sociais e app</h6>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 mb-4 float-left">
+            <!--Redimensionar as imagens-->
+            <img class="img-cartao ml-2 mr-1" src="imagens/mastercard.png">
+            <img class="img-cartao m-1" src="imagens/visa.png">
+            <img class="img-cartao m-1" src="imagens/elo.png">
+            <img class="img-cartao m-1" src="imagens/americanexpress.png">
+            <img class="img-cartao m-1" src="imagens/dinersclub.jpg">
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4 float-right">
+            <!--Enviar para a direita esses ícones-->
+            <img class="redesSociais mr-2" src="imagens/appstore.png">
+            <img class="redesSociais mr-2" src="imagens/playstore.jpg">
+            <img class="redesSociais mr-2" src="imagens/instagram.png">
+            <img class="redesSociais mr-2" src="imagens/facebook.png">
+        </div>
+    </div>
 </footer>
 
     <!-- Bootstrap core JavaScript -->
@@ -157,5 +206,4 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
-
 </html>
