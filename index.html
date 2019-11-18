@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    
+    <!--Site responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    
+    <!--Descrição em sites de busca-->
+    <meta name="description" content=""> 
+    
+    <!--Nome do autor-->
+    <meta name="author" content=""> 
+
+    <title>Veg & Tal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!--Link local do Bootstrap-->
+
+    <!-- Custom styles for this template -->
+    <!--Link local do CSS-->
+    <link href="css/shop-homepage.css" rel="stylesheet"> 
+
+    <!--Link da fonte do Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!--Início da barra de navegação-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-default">
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #337744">-->
+      <!--navbar-expand-lg: tamanho grande expandido, outros tamanhos são recolhidos; navbar-dark: cor do texto; fixed-top: não rola com o conteúdo do site-->
+      <div class="container">
+        <img src="imagens/logosemfundo.png" class="navbar-brand" href="#">
+        <!--navbar-brand: destaque à esquerda da barra igual o B do bootstrap-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--botão para recolher a barra; data-target: expandir a div e o id vai indicar o que ficará dentro quando expandir a barra; navbar-toggler-icon: ícone para clicar-->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+        <!--#navbarSite: data-target-->
+          <ul class="navbar-nav mr-auto">
+          <!--ml-auto: alinha para left; mr-auto: alinha para right-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Sobre Nós</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Missão</a>
+                <a class="dropdown-item" href="#">Visão</a>
+                <a class="dropdown-item" href="#">Valores</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vagas</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofertas do Dia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meu Carrinho</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">Entre</a>
+                  <div class="dropdown-menu dropdown-menu-right" style="background-color: rgb(143, 248, 116);">
+                    <form>
+                      <input class="my-2 mx-4" type="email" placeholder="E-mail"/>
+                      <input class="my-2 mx-4" type="password" placeholder="Senha"/>
+                      <button class="btm btn-outline-success my-2 mx-2" type="submit">Entrar</button><br/>
+                      <!--<br/><input type="radio" name="sexo" value="masculino">Masculino<br/>
+                      <input type="radio" name="sexo" value="feminino"/>Feminino<br/>
+                      <input type="checkbox" name="a" value="1"/>1<br/>
+                      <input type="checkbox" name="a" value="2"/>2<br/>
+                      <input type="checkbox" name="a" value="3"/>3<br/>
+                      type password fica com asteriscos
+                      size em pixels, tamanho do campo
+                      maxlength é a quantidade de caracteres que pode digitar
+                      <input type="submit" name="" value="">Submit
+                      <input type="reset" name="" value="">Reset
+                      -->
+                    </form>
+                    <button type="button" href="#">Cadastre-se</a>
+                  </div>
+            </li>
+          </ul>           
+        </div>
+      </div>
+    </nav>
+    <!--Fim da barra de navegação-->
+    
+    <!--Início da barra de navegação que tem a pesquisa-->
+    <div class="container-navbar-pesquisa my-4 mx-4">
+      <nav id="barraPesquisa" class="navbar navbar-dark" style="background-color: #337744">
+        <!--Ícones provisórios, criar-->
+        <a class="nav-item">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/frutas.png" alt="">
+        </a>
+        <a class="nav-item">
+            <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/icone.png" alt="">Verduras
+        </a>
+        <a class="nav-item">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/icone.png" alt="">Legumes
+        </a>
+        <a class="nav-item">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/granja.png" alt="">
+        </a>
+        <a class="nav-item">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/graos.png" alt="">
+        </a>
+        <a class="nav-item">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/tcc/temperos.png" alt="">
+        </a>
+        <a class="nav-item">
+          <a class="nav-icone" href="#"><img class="card-img-top" src="imagens/icone.png" alt="">Flores
+        </a>
+        <form class="form-inline">
+          <input class="form-control my-2 my-sm-2"type="search" aria-label="Pesquisar">
+          <button class="btn btn-outline-success my-2 mx-2 my-sm-0" type="submit">Pesquisar</button>
+          <!--value placeholder="" aumentar e diminui a barra de pesquisa?-->
+        </form>
+      </nav>
+    </div>
+    <!--Fim da barra de navegação que tem a pesquisa-->
+
+    <!--Início do carrossel-->
+    <div id="carouselExampleIndicators" class="carousel slide my-4 mx-4" data-ride="carousel">
+        <!--my: margem superior-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+          <!--active: essa imagem que começa rodando-->
+            <img class="d-block img-fluid" src="imagens/carrossel1.jpg" alt="First slide">
+            <!--d-block: aparece em todas as resoluções de tela; img-fluid: ocupa todo o tamanho do espaço da div-->
+          </div>
+          <!--ARRUMAR RESOLUÇÃO DAS IMAGENS PARA OCUPAR A TELA 1366x400-->
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="imagens/carrossel2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="imagens/carrossel3.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="imagens/carrossel4.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <!--carousel-control prev: para anterior, next: para o posterior; href: link com o id do carrossel-->
+      </div> 
+  <!--Fim do carrossel-->
+
+  <!--Início dos cards-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100 w-120">
+          <a href="#"><img class="card-img-top" src="imagens/cards/abacaxi.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Abacaxi</a>
+            </h4>
+            <p class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <h2>R$3.99 Kg</h2>
+            <!--Escolher botões, o primeiro eu copiei de um site, mas ainda não funciona-->
+            <input class="btn btn-success button product-quantity-increement" type="button" value="-" onclick="quantity_dec($(this).parent() )">
+            <input type="text" name="quantity" value="1" size="1" class="product-quantity" style="height: 28px">
+            <input class="btn btn-success button product-quantity-decrement" type="button" value="+" onclick="quantity_inc($(this)parent() )">
+            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
+            <button class="botao">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="imagens/cards/couveflor.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Couve Flor</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <h2 class="card-price">R$2.99</h2>
+            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
+            <button class="botao">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="imagens\cards\limao.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Limão</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <h2 class="card-price">R$5.99</h2>
+            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
+            <button class="botao">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="imagens/cards/pitaya.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Pitaya</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <h2 class="card-price">$24.99</h2>
+            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
+            <button class="botao">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="imagens/cards/graodebico.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Grão de Bico</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <h2 class="card-price">$24.99</h2>
+            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
+            <button class="botao">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="imagens/cards/rabanete.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Rabanete</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <h2 class="card-price">$24.99</h2>
+            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
+            <button class="botao">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="imagens/cards/cenoura.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Cenoura</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <h2 class="card-price">$24.99</h2>
+            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
+            <button class="botao">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="imagens/cards/alfaceroxa.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Alface Roxa</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+            <h2 class="card-price">$24.99</h2>
+            <input class="form-peso mr-1" type="number" placeholder="0,000">Kg
+            <button class="botao">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->  
+  </div>
+  <!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 navbar-default">
+<div class="container">
+  <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+  <h6 class="m-2 text-white">Formas de Pagamento</h6>
+  <h6 class="mr-2 text-right text-white">Redes sociais e app</h6>
+  <!--Redimensionar as imagens-->
+  <img class="img-cartao ml-2 mr-1" src="imagens/mastercard.png">
+  <img class="img-cartao m-1" src="imagens/visa.png">
+  <img class="img-cartao m-1" src="imagens/elo.png">
+  <img class="img-cartao m-1" src="imagens/americanexpress.png">
+  <img class="img-cartao m-1" src="imagens/dinersclub.jpg">
+  <!--Enviar para a direita esses ícones-->
+  <img class="redesSociais mr-2" src="imagens/appstore.png">
+  <img class="redesSociais mr-2" src="imagens/playstore.jpg">
+  <img class="redesSociais mr-2" src="imagens/instagram.png">
+  <img class="redesSociais mr-2" src="imagens/facebook.png">
+
+</div>
+<!-- /.container -->
+</footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/dist/umd/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
